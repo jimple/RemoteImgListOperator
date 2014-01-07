@@ -31,6 +31,7 @@ RemoteImgListOperator
 // 页面不需响应图片下载完成的通知，将队列对象扔给具体需显示图片的TableViewCell，由Cell响应通知并显示图片。
 
 _objImgListOper = [[RemoteImgListOperator alloc] init];
+
 [_objImgListOper resetListSize:20];
 
 2、在显示内容时，将队列对象扔给Cell，由Cell内部响应Notification。
