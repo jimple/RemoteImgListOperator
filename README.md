@@ -27,9 +27,12 @@ RemoteImgListOperator
 1、在TableView所在的ViewController中创建队列对象，并这是队列大小。
 
 // 创建一个队列对象，以便在当前页面内统一控制下载数量。
+
 // 页面不需响应图片下载完成的通知，将队列对象扔给具体需显示图片的TableViewCell，由Cell响应通知并显示图片。
+
 _objImgListOper = [[RemoteImgListOperator alloc] init];
 [_objImgListOper resetListSize:20];
+
 2、在显示内容时，将队列对象扔给Cell，由Cell内部响应Notification。
 
         [[NSNotificationCenter defaultCenter] addObserver:self
