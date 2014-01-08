@@ -20,6 +20,7 @@ RemoteImgListOperator
 - 可设置队列长度。
 - 将URL扔给队列，由队列启动RemoteImgOperator进行图片下载，然后通过Notification通知监听者下载结果。
 - 每个下载队列对象的NotificationName都不同。
+
 ------ 用法 ------
 
 以Demo为例：
